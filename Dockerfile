@@ -12,7 +12,7 @@ RUN curl --silent http://apt.mopidy.com/mopidy.gpg | sudo apt-key add -
 RUN curl --silent http://apt.mopidy.com/mopidy.list > /etc/apt/sources.list.d/mopidy.list
 RUN apt-get update
 
-RUN apt-get -y install mopidy mopidy-spotify icecast2
+RUN apt-get -y install mopidy mopidy-spotify mopidy-scrobblericecast2
 RUN apt-get clean
 
 ADD mopidy.conf /.config/mopidy/mopidy.conf
