@@ -20,4 +20,4 @@ ADD webclient   /var/www/webclient
 
 EXPOSE 6680 6600 8000
 
-CMD icecast2 -c /etc/icecast2/icecast.xml & /usr/bin/mopidy
+CMD /usr/bin/mopidy
